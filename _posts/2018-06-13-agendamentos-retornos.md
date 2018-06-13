@@ -43,4 +43,3 @@ permalink: /fastQuestColeta/agendamentos-retornos
 23. Observação;
 24. Telefone contatado;
 25. Agendamento.
-26. Teste
