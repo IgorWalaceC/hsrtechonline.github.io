@@ -3,6 +3,14 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+$( document ).ready(function() {
+	$("#mySidenav").css("width","350px");
+	document.getElementById("main").style.marginLeft = "350px";
+	document.getElementById("header").style.marginLeft = "350px";
+	$(".left").css("display","none");
+	$(".logo").css("margin-left", "-9em");
+	$(".logo-svg").css("right", "23em");
+});
 
 (function ($) {
 
@@ -65,24 +73,26 @@
 })(jQuery);
 
 
-var opacity = document.getElementById('opacity');
 function openNav() {
 	$(window).width();
 	if ($(window).width() <= 980) {
 		document.getElementById("mySidenav").style.width = "100%";
 		document.getElementById("main").style.marginLeft = "100%;";
-		opacity.style.display = "block";
 	} else {
 		document.getElementById("mySidenav").style.width = "350px";
-		document.getElementById("main").style.marginLeft = "350px";
-		opacity.style.display = "block";
+		document.getElementById("main").style.marginLeft = "350px";		
+		$(".left").css("display","none");
+		$(".logo").css("margin-left", "7.5em");		
 	}
 }
 
 function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
-	document.getElementById("main").style.marginLeft = "0";
-	opacity.style.display = "none";
+	document.getElementById("main").style.marginLeft = "0";	
+	document.getElementById("header").style.marginLeft = "0";
+	$(".left").css("display","block");
+	$(".logo").css("margin-left", "0");
+	$(".logo-svg").css("right", "3em");
 }
 
 
@@ -102,10 +112,6 @@ img.each(function (e) {
 		}
 	}
 });
-var divOpacity = document.getElementsByClassName("bodyOpacity")[0];
-divOpacity.onclick = function () {
-	closeNav();
-}
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
 	modal.style.display = "none";

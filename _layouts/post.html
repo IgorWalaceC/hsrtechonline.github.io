@@ -1,26 +1,23 @@
 {% include head.html %}
 <body>               
     {% include nav.html %}        
-    <div class="main" id="main">
-        {%if page.projeto == "fastQuestColeta" %}
-            <header id="header">
-        {% else %}
-            <header id="header" style="background-color: rgb(0,174,172)"> 
-        {% endif %}  
-                <nav class="left">
-                    <a href="#menu" onclick="openNav()" ><span>Menu</span></a>
-                </nav>
-                {%if page.projeto == "fastQuestColeta" %}
-                    <a href="{{site.url}}"><img src="{{ "/assets/fonts/HSRTech_RGB_Cor.svg" | prepend: site.baseurl}}" alt="" class="logo logo-svg"></a>
-                {% else %}
-                    <a href="{{site.url}}"><img src="{{ "/assets/fonts/HSRTech_RGB_Cor-cinza.svg" | prepend: site.baseurl}}" alt="" class="logo logo-svg"></a>
-                {% endif %}                 
-            </header>
+    <div class="main" id="main">            
+        <header id="header"> 
+            <nav class="left">
+                <a href="#menu" onclick="openNav()" ><span>Menu</span></a>
+            </nav>                
+            {%if page.projeto == "fastQuestColeta" %}
+                <a href="" class="logo">{{ site.manualColeta}}</a>        
+            {% else %}
+                <a href="" class="logo">{{ site.manualAdmin}}</a>                
+            {% endif %}                                   
+            <a href="{{site.url}}"><img src="{{ "/assets/fonts/HSRTech_RGB_Cor-cinza.svg" | prepend: site.baseurl}}" alt="" class="logo-svg"></a>
+                                       
+        </header>
             <div class="container">          
                 {{ content }}
             </div>      
-    </div>  
-    <div id="opacity" class="bodyOpacity"></div>    
+    </div>      
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
