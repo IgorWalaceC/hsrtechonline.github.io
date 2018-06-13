@@ -11,9 +11,9 @@
                     <a href="#menu" onclick="openNav()" ><span>Menu</span></a>
                 </nav>
                 {%if page.projeto == "fastQuestColeta" %}
-                    <a href="{{ "/hsr-tech/" | prepend: site.url}}"><img src="{{ "/assets/fonts/HSRTech_RGB_Cor.svg" | prepend: site.baseurl}}" alt="" class="logo logo-svg"></a>
+                    <a href="{{site.url}}"><img src="{{ "/assets/fonts/HSRTech_RGB_Cor.svg" | prepend: site.baseurl}}" alt="" class="logo logo-svg"></a>
                 {% else %}
-                    <a href="{{ "/hsr-tech/" | prepend: site.url}}"><img src="{{ "/assets/fonts/HSRTech_RGB_Cor-cinza.svg" | prepend: site.baseurl}}" alt="" class="logo logo-svg"></a>
+                    <a href="{{site.url}}"><img src="{{ "/assets/fonts/HSRTech_RGB_Cor-cinza.svg" | prepend: site.baseurl}}" alt="" class="logo logo-svg"></a>
                 {% endif %}                 
             </header>
             <div class="container">          
