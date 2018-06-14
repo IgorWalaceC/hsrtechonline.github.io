@@ -22,7 +22,7 @@
                         <div class="dropdown-container">
                             {% for link in site.posts %}
                                 {% if post.nomePasta == link.pasta %}
-                                    <i class="fa fa-caret-right sub-item-menu"></i>
+                                    <i class="fa fa-angle-right sub-item-menu"></i>
                                     <a href="{{ site.baseurl }}{{ link.permalink }}" class="options">{{ link.title }}</a>
                                 {%endif%}
                             {% endfor %}

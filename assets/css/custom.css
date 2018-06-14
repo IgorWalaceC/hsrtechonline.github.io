@@ -154,7 +154,7 @@ ol>li{
 }
 .dropdown-container {
     display: none;
-    background-color: white;
+    background-color: grey;
     padding-left: 8px;
 }
 .dropdown-btn{

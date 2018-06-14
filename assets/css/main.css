@@ -112,8 +112,7 @@
 
 		.container {
 			width: 80em;
-		}
-
+		}		
 	}
 
 	@media screen and (max-width: 1280px) {
@@ -137,7 +136,7 @@
 		}
 
 		.container {
-			width: 65em;
+			width: 50em;
 		}
 
 	}
@@ -193,6 +192,7 @@
 			width: 90% !important;
 			padding-top: 80px;
 		}
+
 
 	}
 
@@ -2673,7 +2673,11 @@
 			}
 
 		}
-
+		@media screen and (max-width: 768px) {
+		.logo-svg{
+			display: none !important;
+		}
+		}
 		@media screen and (max-width: 480px) {
 
 			.wrapper {
@@ -2769,10 +2773,13 @@
 					}
 
 	@media screen and (max-width: 980px) {
-
+		
 		body {
 			padding-top: 44px;
 		}
+		input[type="text"]{	
+			height: 4em;
+		}		
 		.sidenav a{
 			text-align: center;
 			font-size: 1.7em;
@@ -2780,28 +2787,35 @@
 		.logo-menu{
 			height: 150px;
 		}
+		.dropdown-btn{
+			font-size: 2em !important;
+			margin-left: 35%;
+		}
+		.sub-item-menu{
+			margin-top: .5em;
+			font-size: 2em;
+		}
 		#header {
 			height: 80px;
 			line-height: 44px;
 		}
 
-			#header .logo {
-				font-size: 1.25em;
-				text-align: center;
-			}
+		#header .logo {
+			top: .5em;			
+		}
 
-			#header nav a[href="#menu"] {
-				font-size: 2em;
-			}
+		#header nav a[href="#menu"] {
+			font-size: 2em;
+		}
 
-			#header nav.left {
-				left: 1em;
-				top: 1em;
-			}
+		#header nav.left {
+			left: 1em;
+			top: 1em;
+		}
 
-			#header nav.right {
-				display: none;
-			}		
+		#header nav.right {
+			display: none;
+		}		
 
 	}
 
@@ -2811,17 +2825,40 @@
 			min-width: 320px;
 			height: 60px;		
 		}
-			#header nav a[href="#menu"] {
-				font-size: 1.6em;
-			}
+		#header nav a[href="#menu"] {
+			font-size: 1.6em;
+		}
 
-			#header nav.left {
-				left: 1em;
-				top: .5em;				
-			}
-
+		#header nav.left {
+			left: 1em;
+			top: .5em;				
+		}
+		.dropdown-btn{
+			font-size: 2em !important;
+			margin-left: 25%;
+		}		
+		.logo-svg{
+			display: none !important;
+		}
+		#header .logo {
+			top: .2em;
+		}
 	}
-
+	@media screen and (max-width: 375px) {
+		#header .logo{
+			font-size: 2em;
+		}
+		.sidenav a {		
+			font-size: 1.3em;
+		}
+		.dropdown-btn{
+			margin-top: -1.3em;
+			margin-left: 27%;
+		}
+		.sub-item-menu{
+			margin-top: .3em;
+		}
+	}
 /* Menu */
 
 	#menu {
