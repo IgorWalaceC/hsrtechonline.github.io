@@ -6,10 +6,10 @@ permalink: /fastQuestAdmin/funcoes/gravar-e-selecionar-resposta-multipla
 pasta: "funcoes"
 ---
 # $FUNCAO_GRAVA_OPCAO(NRQUESTAO;OPCOES)
-*Grava no banco e seleciona uma ou mais opções em uma questão multipla. *
-Parametros: 
-- NRQUESTAO: código da questão
-- **OPCOES**: informar o valor das opções que deseja gravar para a questão em caso de RM informar os valores separados por "\|" (pipe)
+*Grava no banco e seleciona uma ou mais opções em uma questão multipla.*
+- Parâmetros: 
+    - NRQUESTAO: código da questão
+    - **OPCOES**: informar o valor das opções que deseja gravar para a questão em caso de RM informar os valores separados por "\|" (pipe)
 - Exemplo1 (RU):
     - **$FUNCAO_GRAVA_OPCAO(Q10;4)**
 - Resultado:

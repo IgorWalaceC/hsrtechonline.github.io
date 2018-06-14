@@ -9,7 +9,7 @@ pasta: "funcoes"
 	
 *Permite preencher um determinado controle de questionário, por exemplo, um campo de verbalização com um valor expecífico*
 
-- Parametros: 
+- Parâmetros: 
     - NRQUESTAO: código da questão
     - VALOR: valor que se deseja atribuir ao controle de questionário
 - Exemplo:

@@ -9,7 +9,7 @@ pasta: "funcoes"
 
 *Conta o total de opções de uma determinada questão, a contagem de opções pode ser: total, total selecionado ou total não selecionado de acordo com o parâmetro tipo que é opcional*
 
-- Parametros: 
+- Parâmetros: 
     - NrQuestao: identificador da questão
     - tipo: parâmetro opcional. são aceitos os seguintes valores:
         -  nulo: conta todas as opções da questão

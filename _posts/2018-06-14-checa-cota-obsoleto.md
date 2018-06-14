@@ -10,7 +10,7 @@ pasta: "funcoes"
 *Retorna 1 quando a cota está atingida, ou seja, não pode prosseguir com o questionário*
 *Retorna 0 quando a cota ainda não foi atingida, ou seja o questionário deve prosseguir*
 
-- Parametros: 
+- Parâmetros: 
     - CdCota: código de cota préviamente criada
 - Exemplo:
 ![Imagem de apoio 1]({{ "/assets/img/checa-cota.jpg" | prepend: site.baseurl }})

@@ -7,7 +7,7 @@ pasta: "funcoes"
 ---
 # $FUNCAO_APAGA_OPCAO_MULTIPLA(NRQUESTAO;OPCAO)
 *Apaga uma deteminada OPÇÃO*
-- Parametros: 
+- Parâmetros: 
     - NrQuestao: identificador da questão
     - opção: valor da opção
 - Exemplo:

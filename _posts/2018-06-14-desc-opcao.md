@@ -8,7 +8,7 @@ pasta: "funcoes"
 # $FUNCAO_RETORNA_DESC_OPCAO (NRQUESTAO;OPCAO)
 
 Retorna a descrição de uma determinada opção geralmente utilizado nos campos de texto dos questionários para ajudar a formular uma pergunta baseado na descrição de uma opção selecionada anteriormente
-- Parametros: 
+- Parâmetros: 
     - NRQUESTAO: código da questão
     - OPCAO: valor da opção
 - Exemplo:

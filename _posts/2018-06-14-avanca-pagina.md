@@ -9,7 +9,7 @@ pasta: "funcoes"
 
 Executa um pulo para a próxima página do questionário, Valor: passar vazio
 
-- Parametros: 
+- Parâmetros: 
     - ACAO: **PROXIMA**
     - VALOR: passar vazio
 - Exemplo:

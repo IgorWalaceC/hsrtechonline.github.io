@@ -9,7 +9,7 @@ pasta: "funcoes"
 
 *Coloca uma determinada cota em andamento*
 
-- Parametros: 
+- Parâmetros: 
     - CdCota: código de cota préviamente criado
 - Exemplo:
     - **$FUNCAO_ATUALIZA_COTA(C1)**

@@ -9,7 +9,7 @@ pasta: "funcoes"
 
 Atribui um valor de resposta para uma determinada questão. Valor: NRQUESTAO>VALOR. lembrando que o sinal ">" *serve para separar o código da questão do valor da opção*
 
-- Parametros: 
+- Parâmetros: 
     - ACAO: RESPOSTA
     - VALOR: NRQUESTAO>OPCAO. Onde: 
         - NRQUESTAO é o código da questão

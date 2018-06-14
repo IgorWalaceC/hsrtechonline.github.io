@@ -8,7 +8,7 @@ pasta: "funcoes"
 # $FUNCAO_EXECUTA_ACAO (MENSAGEM;VALOR) 
 Abre uma mensagem de validação na página do questionário, a mensagem aparece depois de clicar no botão prosseguir e não permitirá que o questionário avance para a próxima página
 
-- Parametros: 
+- Parâmetros: 
     - ACAO: MENSAGEM
     - VALOR: Texto que irá aparecer na tela para orientação do respondente
 - Exemplo:

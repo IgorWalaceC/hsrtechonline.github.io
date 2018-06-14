@@ -9,7 +9,7 @@ pasta: "funcoes"
 
 *Executa uma instrução ou grupo de instruçoes N vezes onde N é a quantidade de opcoes separadas por pipe.*
 
-Parametros: 
+Parâmetros: 
 - OPCOES: valores de opções separadas por pipe exemplo: "1/2/5/7"
 - INSTRUCAO: pode ser qualer função ou conjunto de funções apresentadas neste documento bem como instruções condicionais e outras derivadas da linguagem SQL 
 - Exemplo:

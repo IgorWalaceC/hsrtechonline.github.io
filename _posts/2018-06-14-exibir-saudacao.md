@@ -10,7 +10,7 @@ pasta: "funcoes"
 Exibe uma saudação de acordo com á hora do servidor podendo ser: "Bom dia" ou "Boa tarde" ou "Boa noite". 
 
 *Obs.: é possível passar como parâmetro a lingua em que se deseja a saudação, porém atualmente há suporte apenas para  o espanhol do Peru*
-- Parametros: 
+- Parâmetros: 
     - LINGUA: es-PE
 - Exemplo:
     - **$FUNCAO_EXIBIR_SAUDACAO(es-PE)**

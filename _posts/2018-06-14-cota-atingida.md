@@ -7,7 +7,7 @@ pasta: "funcoes"
 ---
 # $FUNCAO_CHECA_COTA_ATINGIDA (Cota)
 *Faz o  mesmo que a $FUNCAO_CHECA_COTA*
-- Parametros: 
+- Parâmetros: 
     - CdCota: código de cota préviamente criado
 - Exemplo:
     - **FUNCAO_CHECA_COTA_ATINGIDA(C1)**
