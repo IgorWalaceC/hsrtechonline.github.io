@@ -1933,14 +1933,14 @@
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: 3.5em;
-		line-height: 3.5em;
+		height: 2em;
+		line-height: 2em;
 		width: 80%;
 		margin-top: 2em;
 		margin-bottom: 1.7em;
 		margin-left: auto;
 		margin-right: auto;
-		color: white;
+		color: #000000;
 	}
 
 	textarea {
@@ -2696,7 +2696,7 @@
 		background: rgb(0,174,172);
 		cursor: default;
 		height: 4em;
-		left: 0;
+		right: 0;
 		line-height: 6em;
 		position: fixed;
 		top: 0;
@@ -2707,7 +2707,8 @@
 	}
 
 		#header .logo {			
-			display: block;
+			top: -.5em;
+			position: relative;
 			color: white;
 			font-size: 2.5em;
 			letter-spacing: 2px;
@@ -2745,7 +2746,7 @@
 					text-decoration: none;
 					-webkit-tap-highlight-color: transparent;
 					font-size: 2em;
-					color: #585858;
+					color: white;
 					z-index: 10005;
 				}
 

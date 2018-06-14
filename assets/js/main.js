@@ -4,12 +4,11 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 $( document ).ready(function() {
-	$("#mySidenav").css("width","350px");
-	document.getElementById("main").style.marginLeft = "350px";
-	document.getElementById("header").style.marginLeft = "350px";
-	$(".left").css("display","none");
-	$(".logo").css("margin-left", "-9em");
-	$(".logo-svg").css("right", "23em");
+	$("#mySidenav").css("width","13%");
+	document.getElementById("main").style.width = "87%";
+	document.getElementById("main").style.marginLeft = "13%";
+	document.getElementById("header").style.width = "87%";
+	$(".left").css("display","none");		
 });
 
 (function ($) {
@@ -71,28 +70,27 @@ $( document ).ready(function() {
 	});
 
 })(jQuery);
-
-
 function openNav() {
 	$(window).width();
 	if ($(window).width() <= 980) {
 		document.getElementById("mySidenav").style.width = "100%";
 		document.getElementById("main").style.marginLeft = "100%;";
 	} else {
-		document.getElementById("mySidenav").style.width = "350px";
-		document.getElementById("main").style.marginLeft = "350px";		
-		$(".left").css("display","none");
-		$(".logo").css("margin-left", "7.5em");		
+		$("#mySidenav").css("width","13%");
+		document.getElementById("main").style.marginLeft = "13%";
+		$(".left").css("display","none");	
+		document.getElementById("header").style.width = "87%";
+		document.getElementById("main").style.width = "87%";
 	}
 }
 
 function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("main").style.marginLeft = "0";	
+	document.getElementById("main").style.width = "100%";	
 	document.getElementById("header").style.marginLeft = "0";
+	document.getElementById("header").style.width = "100%";
 	$(".left").css("display","block");
-	$(".logo").css("margin-left", "0");
-	$(".logo-svg").css("right", "3em");
 }
 
 
@@ -104,7 +102,7 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.each(function (e) {
 	img[e].onclick = function () {
-		if(!img[e].className.includes("logo")){
+		if(!img[e].className.includes("logo") || !img[e].className.includes("modal-content")){
 			modal.style.display = "block";
 			modalImg.src = this.src;
 			captionText.innerHTML = this.alt;
