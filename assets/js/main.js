@@ -68,12 +68,20 @@ $( document ).ready(function() {
 })(jQuery);
 function openNav() {	
 	var tela = $(window).width();
-	if(tela > 1024) {
+	if(tela > 1720) {
 		$("#mySidenav").css("width","13%");
 		document.getElementById("main").style.marginLeft = "13%";
 		$(".left").css("display","none");	
 		document.getElementById("header").style.width = "87%";
 		document.getElementById("main").style.width = "87%";
+	}
+	if (tela <= 1720 && tela > 1024) {
+		$("#mySidenav").css("width","20%");
+		$("#main").css("margin-left","20%");
+		$("#main").css("width","80%");	
+		$(".left").css("display","none");	
+		$("#header").css("width", "80%");
+		$(".logo-svg").css("display", "none");
 	}
 	if (tela <= 1024 && tela > 768) {
 		$("#mySidenav").css("width","25%");
