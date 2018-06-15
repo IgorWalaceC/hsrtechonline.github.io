@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "(SE)Condição Ternária"
+title:  "Condição Ternária(SE)"
 projeto: "fastQuestAdmin"
 permalink: /fastQuestAdmin/funcoes/se-condicao-ternaria
 pasta: "funcoes"

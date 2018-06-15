@@ -2,38 +2,46 @@
     <a class="closebtn" onclick="closeNav()">&times;</a>      
     <input type="text" id="myInput" onkeyup="searchNav()" placeholder="Pesquisar..." title="Type in a name">    
     <div id="menuList">     
-    {%if page.projeto == "fastQuestColeta" %}
-        {% for post in site.posts %}
-            {%if post.projeto == "fastQuestColeta" %}
-                <a href="{{ site.baseurl }}{{ post.url }}" class="options">{{ post.title }}</a>                           
-            {% endif %}        
-        {% endfor %}    
-    {% else %}
-        {% for post in site.posts %}            
-            {%if post.projeto == "fastQuestAdmin" %}
-                {%if post.pasta %}
-                    
-                {% else %}     
-                    {%if post.nomePasta %}                                        
+        {%if page.projeto == "fastQuestColeta" %}
+            {% for post in site.posts %}
+                {%if post.projeto == "fastQuestColeta" %}
+                    <a href="{{ post.url }}" class="options">{{ post.title }}</a>                           
+                {% endif %}        
+            {% endfor %}    
+        {% else %}        
+            {% for post in site.posts %}
+                {%if post.projeto == "fastQuestAdmin" %}
+                    {%if post.pasta %}
+                    {% else %}
+                        {%if post.nomePasta %} {% else %}
+                            <a href="{{ post.url }}" class="options">{{ post.title }}</a>
+                        {%endif%}
+                    {%endif%}
+                {%endif%}
+            {%endfor%}
+
+            {% for list in site.posts %}
+                {%if list.projeto == "fastQuestAdmin" %}
+                {%if list.nomePasta %}
                     <div class="dropdown">
-                        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}                                
-                        </a>                                                
-                        <i class="fa fa-caret-down dropdown-btn"></i>                        
+                        <a href="{{ list.url }}">{{ list.title }}</a>                                                
+                        <i class="fa fa-caret-down dropdown-btn"></i>
                         <div class="dropdown-container">
-                            {% for link in site.posts %}
-                                {% if post.nomePasta == link.pasta %}
+                            {% assign sorted_threat_posts = site.posts | sort: 'title' %}
+                            {% for link in sorted_threat_posts | sort: 'title' %}
+                                {% if list.nomePasta == link.pasta %}
                                     <i class="fa fa-angle-right sub-item-menu"></i>
                                     <a href="{{ site.baseurl }}{{ link.permalink }}" class="options">{{ link.title }}</a>
                                 {%endif%}
                             {% endfor %}
                         </div>
                     </div>
-                    {% else %}
-                        <a href="{{ site.baseurl }}{{ post.url }}" class="options">{{ post.title }}</a>
-                    {%endif%}
-                {%endif%}
-            {%endif%}
-        {% endfor %}    
-    {% endif %}
+                    {%endif%}                        
+                {% endif %}
+            {%endfor%}
+        {% endif %}
     </div>    
 </div>
+
+
+
