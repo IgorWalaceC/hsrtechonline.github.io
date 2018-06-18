@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "Funções"
+title:  "Questionário"
 projeto: "fastQuestAdmin"
-permalink: /fastQuestAdmin/funcoes
-nomePasta: "funcoes"
+permalink: /fastQuestAdmin/questionario
+nomePasta: "Questionario"
 ---
-# Funções
+# Questionário
 
-Funções são códigos pré desenvolvidos para a programação de questionários.
+Questionário é o local onde será adicionado as páginas, questões e condições sobre o projeto.
+
 <div class="row">    
     {% for post in site.posts %}
         {%if post.projeto == "fastQuestAdmin" %}

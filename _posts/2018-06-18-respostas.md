@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "Funções"
+title:  "Respostas"
 projeto: "fastQuestAdmin"
-permalink: /fastQuestAdmin/funcoes
-nomePasta: "funcoes"
+permalink: /fastQuestAdmin/respostas
+nomePasta: "Respostas"
 ---
-# Funções
+# Respostas
 
-Funções são códigos pré desenvolvidos para a programação de questionários.
+São as respostas concedidas pelo entrevistado para o entrevistador que serão gravadas no questionário.
+
 <div class="row">    
     {% for post in site.posts %}
         {%if post.projeto == "fastQuestAdmin" %}
@@ -20,4 +21,4 @@ Funções são códigos pré desenvolvidos para a programação de questionário
             {% endif %}
         {% endif %}
     {% endfor %}    
-</div>           
+</div>
