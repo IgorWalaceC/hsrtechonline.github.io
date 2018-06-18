@@ -5,6 +5,12 @@
 */
 $( document ).ready(function() {
 	openNav();
+	var loc = window.location.href;
+    $("menuList a").each(function() {
+        if (loc.search($(this).attr("href")) != -1) {
+            $(this).addClass("current");
+        }
+    });
 });
 
 (function ($) {

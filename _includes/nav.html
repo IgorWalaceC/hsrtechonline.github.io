@@ -1,5 +1,6 @@
 <div id="mySidenav" class="sidenav">
-    <a class="closebtn" onclick="closeNav()">&times;</a>      
+    <a class="closebtn" onclick="closeNav()">&times;</a>    
+    <a href="{{ site.url }}" class="pag-principal">Página Principal</a>  
     <input type="text" id="myInput" onkeyup="searchNav()" placeholder="Pesquisar..." title="Type in a name">    
     <div id="menuList">     
         {%if page.projeto == "fastQuestColeta" %}
@@ -14,7 +15,7 @@
                     {%if post.pasta %}
                     {% else %}
                         {%if post.nomePasta %} {% else %}
-                            <a href="{{ post.url }}" class="options">{{ post.title }}</a>
+                            <a href="{{ post.permalink }}" class="options">{{ post.title }}</a>
                         {%endif%}
                     {%endif%}
                 {%endif%}
@@ -24,14 +25,14 @@
                 {%if list.projeto == "fastQuestAdmin" %}
                 {%if list.nomePasta %}
                     <div class="dropdown">
-                        <a href="{{ list.url }}">{{ list.title }}</a>                                                
+                        <a href="{{ list.permalink }}">{{ list.title }}</a>                                                
                         <i class="fa fa-caret-down dropdown-btn"></i>
                         <div class="dropdown-container">
                             {% assign sorted_threat_posts = site.posts | sort: 'title' %}
                             {% for link in sorted_threat_posts | sort: 'title' %}
                                 {% if list.nomePasta == link.pasta %}
                                     <i class="fa fa-angle-right sub-item-menu"></i>
-                                    <a href="{{ site.baseurl }}{{ link.permalink }}" class="options">{{ link.title }}</a>
+                                    <a href="{{ link.permalink }}" class="options">{{ link.title }}</a>
                                 {%endif%}
                             {% endfor %}
                         </div>
