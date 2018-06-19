@@ -6,10 +6,22 @@
 $( document ).ready(function() {
 	openNav();
 	var loc = window.location.href;
-    $("menuList a").each(function() {
-        if (loc.search($(this).attr("href")) != -1) {
-            $(this).addClass("current");
-        }
+	var lista = $("#menuList a")
+	var i = 0;
+	var j = 0;
+    lista.each(function() {		
+        if(loc.search(lista[i].href) != -1){			
+			if(j > 0){
+				$(".dropdown-container").each(function(){					
+					if($(this).find(lista[i]).length > 0){
+						$(this).css("display", "block");
+					}					
+				});
+			}
+			$(lista[i]).addClass("active");
+			j++;
+		}
+		i++;
     });
 });
 

@@ -22,6 +22,9 @@
     padding-top: 60px;
     box-shadow: 1px 0 10px 0px grey;
 }
+.sidenav .active{
+    color: rgb(0,174,172);
+}
 .sidenav .pag-principal{    
     padding: 0px;
     text-align: center;
