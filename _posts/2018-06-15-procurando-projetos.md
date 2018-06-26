@@ -5,34 +5,52 @@ projeto: "fastQuestAdmin"
 permalink: /fastQuestAdmin/projetos/procurando-projetos
 pasta: "Projetos"
 ---
-# Selecionado Projetos
+## Selecionado Projetos
 <div class="row" markdown="1">
-<div class="6u 12u$(small)" markdown="1">
-1. Na página inicial clique em "procurar registros" no canto inferior esquerdo na página inicial;
+<div class="12u 12u$(small)" markdown="1">
+A lista de projetos/jobs é dividade em três Pastas:
+1. Favoritos
+2. Ativos
+3. Encerrados
+
+![Lista de Jobs]({{ "/assets/img/ListaJobs.png" | prepend: site.baseurl }})
+
+A Pasta Favoritos virá pré selecionada caso haja jobs na lista de favoritos, caso ainda não tenha selecionando nenhum Job como favorito a pasta Ativos vem pré selecionada
+
+![Lista de Jobs]({{ "/assets/img/ContadorJob.png" | prepend: site.baseurl }})
+
+Os contadores acima indicam a quantidade de jobs que cada pasta tem.
+
+# Escolhendo seus jobs favoritos
+
+![Lista de Jobs]({{ "/assets/img/EstrelaFavorito.png" | prepend: site.baseurl }})
+
+A estrela é um botão que permite colocar o job como favorito ou tirá-lo do favorito. Basta clicar na estrela.
+Quando a estrela estiver amarela significa que o job já é seu favorito.
+Ao clicar na estrela se ela já estiver amarela o job sairá da sua lista de favoritos. Caso contrário o job passára para sua lista de favoritos.
+
+# Localizando um projeto
+![Lista de Jobs]({{ "/assets/img/LocalizarJob.png" | prepend: site.baseurl }})
+
+A opção buscar permite a localização do projeto por sue código, descrição ou tipo.
+
+Basta clicar na Caixa "Buscar" e digitar O código, ou descrição ou tipo do projeto desejado.
+
+Se o projeto que você procurar não estiver nesta lista, solicite o acesso ao projeto através do email: atendimento@hsrtech.com.br
+
+
+
 </div>
 <div class="6u 12u$(small)" markdown="1">
-![Imagem de apoio 1]({{ "/assets/img/procurando-projetos-01.png" | prepend: site.baseurl }})
+
 </div>                               
 </div>
-Então teremos os campos por padrão Código do Job, igual e um campo vazio.
 
-Código do Job: É o campo em que define a coluna do que será procurado. Pode ser alterado para descrição do Job, realizadas, tipo, início e fim.
-
-Igual: É o campo em que define a condição para achar o que será procurado. Pode ser Alterado para diferente, inicia com, não inicia com, termina com, não termina com, contém, não contém, nulo, não nulo, está em e não está em.
-
-Campo vazio: É o campo em que se coloca o que será procurado. Por exemplo se está definido como Código do Job você irá colocar o ID do projeto.
 <div class="row" markdown="1">
 <div class="6u 12u$(small)" markdown="1">
-{:start="2"}
-2. Defina o coluna do que será procurado no campo "Código do Job";
 
-3. Defina a condição para achar o que será procurado no campo "igual";
-
-4. Coloque o que será procurado;
-
-5. Para pesquisar clique em "Procurar", se quiser voltar os campos para os valores padrão, clique em "Resetar".
 </div>
 <div class="6u 12u$(small)" markdown="1">
-![Imagem de apoio 2]({{ "/assets/img/procurando-projetos-02.png" | prepend: site.baseurl }})
+
 </div>                               
 </div>
