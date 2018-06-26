@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Procurando Projeto"
+title:  "Selecionando Projetos"
 projeto: "fastQuestAdmin"
 permalink: /fastQuestAdmin/projetos/procurando-projetos
 pasta: "Projetos"
 ---
-# Procurando Projetos
+# Selecionado Projetos
 <div class="row" markdown="1">
 <div class="6u 12u$(small)" markdown="1">
 1. Na página inicial clique em "procurar registros" no canto inferior esquerdo na página inicial;
